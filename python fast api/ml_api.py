@@ -48,9 +48,8 @@ def diabetes_pred(input_parameters: model_input):
     # Determine the prediction result
     if prediction[0] == 0:
         result = 'Not Diabetic'
+        return result
     else:
         result = 'Diabetic'
+        return result
 
-    # Return the prediction result
-    return {'prediction': result}
-    
